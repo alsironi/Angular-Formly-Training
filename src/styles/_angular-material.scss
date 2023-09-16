@@ -1,0 +1,79 @@
+.b-form .mat-form-field-label {
+  text-transform: uppercase;
+}
+
+.mat-paginator-page-size-select .mat-select {
+  padding: 5px;
+}
+.mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content  {
+  height: auto !important;
+  padding: 4px 0 !important;
+  font-family: "opensans-regular";
+  font-size: rem(15);
+}
+
+.mat-list-base[aria-multiselectable="false"] .mat-list-item .mat-list-item-content-reverse {
+  border: solid 1px $color5;
+  margin-bottom: 5px;
+}
+
+.mat-list-base[aria-multiselectable="false"] .mat-list-option.mat-list-option .mat-list-item-content-reverse .mat-list-text {
+  padding: 0 10px;
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+  height: auto !important;
+}
+
+.mat-accent, .mat-primary {
+  .mat-pseudo-checkbox {
+    color: $color1;
+    &.mat-pseudo-checkbox-checked {
+      background: $color1;
+    }
+  }
+}
+
+.fieldset-checkbox-inline {
+  .mat-form-field-infix {
+    padding: 0;
+    margin: 0;
+    border-top: 0;
+  }
+  .mat-checkbox-layout {
+    margin-bottom: 0;
+  }
+
+}
+
+.mat-menu-item{
+  font-family: "opensans-regular";
+  line-height: rem(20);
+  height: rem(20);
+
+  &:hover {
+    color: $color8 !important;
+    background-color: $color1 !important;
+  }
+}
+
+.b-form .fieldset-checkbox-inline .mat-form-field  .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+.mat-select-placeholder {
+  color: $color5;
+}
+
+.mat-form-field-disabled {
+  .mat-datepicker-toggle {
+    .mat-icon-button {
+      pointer-events: none;
+    }
+  }
+}
+
+.mat-input-element {
+  box-sizing: border-box;
+}
+

@@ -1,0 +1,17 @@
+[
+  {
+    "key": "firstName2",
+    "type": "input"
+  },
+    {
+    "key": "mySelect",
+    "type": "select",
+    "props": {
+      "label": "Elige una opción",
+      "options": [
+        { "label": "No Necesito Cargar Archivo",  "value": 1 },
+        { "label": "Necesito Cargar Archivo",  "value": 2 }
+      ]
+    }
+  }
+]

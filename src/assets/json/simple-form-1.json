@@ -1,0 +1,70 @@
+[
+  {
+    "key": "firstName",
+    "type": "input",
+    "templateOptions": {
+      "label": "First Name",
+      "placeholder": "Enter firstname",
+      "required": true
+    }
+  },
+  {
+    "key": "lastName",
+    "type": "input",
+    "expressionProperties": {
+      "templateOptions.disabled": "!model.firstName"
+    },
+    "templateOptions": {
+      "label": "Last Name",
+      "placeholder": "Enter Last Name",
+      "required": true
+    }
+  },
+  {
+    "key": "document",
+    "type": "select",
+    "props": {
+      "required": true,
+      "label": "document",
+      "options": [
+        { "id": "1", "name": "Regular passport" },
+        { "id": "2", "name": "Diplomatic passport" }
+      ],
+      "valueProp": "id",
+      "labelProp": "name"
+    }
+  },
+  {
+    "key": "country",
+    "type": "select",
+    "props": {
+      "required": true,
+      "label": "country",
+      "options": [],
+      "valueProp": "id",
+      "labelProp": "name"
+    }
+  },
+  {
+    "key": "doc",
+    "type": "input",
+    "expressionProperties": {
+      "hide": "!model.country",
+      "templateOptions.label": "'Document Number'"
+    },
+    "templateOptions": {
+      "required": true
+    }
+  },
+  {
+    "key": "agree",
+    "type": "checkbox",
+    "expressionProperties": {
+      "templateOptions.disabled": "!model.doc"
+    },
+    "templateOptions": {
+      "label": "Agree?",
+      "required": true
+    }
+  }
+]

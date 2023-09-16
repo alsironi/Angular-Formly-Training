@@ -1,0 +1,15 @@
+<div class="example-container">
+    <div class="header">
+      <h4 class="mat-h2">Página 1</h4>
+    </div>
+  
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="bForm">
+      <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options">
+      </formly-form>
+      <button type="submit" mat-raised-button [disabled]="!form.valid">Submit</button>
+      <!-- disable NgIf? -->
+      <button type="reset" color="warn" mat-raised-button>
+        Reset
+      </button>
+    </form>
+  </div>

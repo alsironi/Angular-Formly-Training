@@ -1,0 +1,34 @@
+<div class="example-container">
+    <div class="header">
+      <h4 class="mat-h2">Página 2</h4>
+      <button (click)="goToHomepage()" routerLink="">Volver a la página Anterior</button>
+    </div>
+    <form [formGroup]="form" class="bForm">
+      <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options">
+      </formly-form>
+      <button *ngIf="showButton"><input type="file" id="fileInput" hidden>
+        <label for="fileInput" class="custom-file-upload-button">Subir archivo</label>
+      </button>
+      <section *ngIf="isTableVisible && users.length > 0" class="mat-elevation-z8" tabindex="0">
+        <table class="mat-elevation-z8">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Surname</th>
+              <th>Document Type</th>
+              <th>Country</th>
+              <th>Document Number</th>
+              <th>Agreed?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of users">
+              <td>{{ item.firstName }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="loader" *ngIf="isLoading">Loading...</div>
+    
+    </form>
+  </div>
